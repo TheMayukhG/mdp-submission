@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+}
+
+body{
+    background: #12181b;
+    height: 2000px;
+    overflow-x: hidden;
+}
+.head-not-scrolled{
+    background: #12181b;
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    color: #fff;
+    transition: background 0.3s ease-in-out;
+}
+ul{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    list-style: none;
+    color: inherit;
+}
+nav li{
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+}
+nav li a{
+    text-decoration: none;
+    color: inherit;
+}
+.link{
+    position: relative;
+}
+.link::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    background: currentColor;
+    transition: transform 0.25s;
+}
+.link:hover::after{
+    transform: scaleX(1);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-logo{
+    height: 60px;
+    width: 60px;
+}
+.button{
+    border: 1px solid #fff;
+    padding: 0.8em;
+    background: #12181b;
+    letter-spacing: 1px;
+    border-radius:2em;
+    color: #fff;
+    transition: background 0.25s;
+    cursor: pointer;
+}
+.button:hover{
+    background: #fff;
+    color: #12181b;
+    border-color: #12181b;
+}
+.mobile{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:693px) {
+    .Desktop{
+        display: none;
+    }
+    #dropdown{
+        /* display: none; */
+        background: #22262f;
+        /* height: 60px; */
+        transition: 0.5s;
+        display: flex;
+        width: 100vw;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        overflow: hidden;
+    }
+    .height-60{
+        height: 60px;
+    }
+    header{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+    .visible{
+        display: block;
+        z-index: 2;
+    }
+    .link-list{
+        display: inline-block;
+    }
+    .links{
+        position: absolute;
+        right: 0px;
+    }
+    .ppt{
+        width: 100vw;
+    }
+    .desc{
+        text-align: center;
+    }
+}
+@media (min-width:693px) {
+    .mobile{
+        display: none;
+    }
+}
+@media (max-width:800px){
+    .sub-link{
+        margin-top: 500px;
+    }
+}
+
+header{
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 15000000000;
+    background: #12181b;
+    transition: background 0.3s ease-in-out;
+}
+/* navbar chage to scroll */
+.head-scrolled{
+    background: #22262f;
+    color: #fff;
+}
+#dropdown{
+    color: #fff;
+}

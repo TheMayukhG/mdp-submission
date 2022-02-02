@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="favicon.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MDP Submission</title>
+  <link rel="stylesheet" href="css/canvas.css">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+  <header id="header" class="head-not-scrolled">
+    <nav class="Desktop">
+
+      <ul class="links">
+        <li class="link-list"><a class="link" href="#">Home</a></li>
+        <li class="link-list"><a class="link" href="#">Docs</a></li>
+        <li class="link-list"><a class="link" href="#">Releases</a></li>
+        <li class="link-list"><a class="link" href="#">Support</a></li>
+      </ul>
+      <ul class="buttons">
+        <li><a class="button">Mark Me</a></li>
+      </ul>
+    </nav>
+    <nav class="mobile">
+      <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="80px" fill="#fff">
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+      <div id="dropdown">
+        <ul class="links">
+          <li class="link-list"><a class="link" href="#">Home</a></li>
+          <li class="link-list"><a class="link" href="#">Docs</a></li>
+          <li class="link-list"><a class="link" href="#">Releases</a></li>
+          <li class="link-list"><a class="link" href="#">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="landingPage">
+    <h1 class="welcome">Welcome</h1>
+    <p class="desc">A website for MDP Project of Mayukh from Class VI. This website is completely made by myself. You
+      can send me a <a class="feedback" href="#">feedback.</a></p>
+
+    <a class="button" id="lbtn" href="#projects">See The Projects</a>
+    <svg id="gobtn" xmlns="http://www.w3.org/2000/svg" height="34px" width="34px" viewBox="0 0 44 44" fill="#fff">
+      <g>
+        <path d="M0,0h24v24H0V0z" fill="none" />
+      </g>
+      <g>
+        <polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12" />
+      </g>
+    </svg></li>
+
+  </div>
+  <div id="scrollDown">
+
+    <a id="scrldwn" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules"
+      data-ca3_icon=""></a>
+
+  </div>
+
+
+
+  <canvas id="bg"></canvas>
+  <!-- <canvas id="main"></canvas> -->
+
+  <div class="main-content">
+    <h1 class="title" id="projects">The projects</h1>
+    
+    <div class="sub-link">
+      <div>
+        <button class="subject-btn science">Science</button>
+      </div>
+      <div>
+        <button class="subject-btn math">Math</button>
+      </div>
+      <div>
+        <button class="subject-btn ssc">SST</button>
+      </div>
+      <div>
+        <button class="subject-btn eng">English</button>
+      </div>
+      <div>
+        <button class="subject-btn hindi">Hindi</button>
+      </div>
+      <div>
+        <button class="subject-btn sanskrit">Sanskrit</button>
+      </div>
+    </div>
+  </div>
+  <div class="projects">
+    <h1 class="sub-title" id="science">Science</h1>
+  </div>
+
+  <script src="modules/three.min.js"></script>
+  <script src="modules/OrbitControls.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/landing.js"></script>
+
+  <div id="vanta-rings" class="animated-backgrounds">
+
+    <div class="blur-edge"></div>
+    <div class="blur-edge-top"></div>
+  </div>
+  <div id="vanta-birds" class="animated-backgrounds">
+    <div class="blur-edge"></div>
+    <div class="blur-edge-top"></div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script src="js/vantaconfigure.js"></script>
+</body>
+
+</html>

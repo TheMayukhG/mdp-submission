@@ -1,0 +1,121 @@
+@import url("https://pro.fontawesome.com/releases/v5.12.0/css/all.css");
+@import url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css");
+
+.sub-link {
+  display: flex;
+  /* margin-top: 150px; */
+  
+  position: absolute;
+  bottom: -150px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width:600px){
+    .sub-link{
+        bottom: -200px;
+    }
+}
+@media (max-width:400px){
+    .sub-link{
+        bottom: -400px;
+    }
+}
+.subject-btn {
+  font-family: poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5em;
+  padding: 1rem;
+  border: 0;
+  transition: padding 0.5s;
+  border-radius: 10px;
+  width: auto;
+  position: relative;
+  min-width: 200px;
+}
+.science::after {
+  content: "\f0c3";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  position: absolute;
+  left: 80%;
+  top: 52%;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+.math::after {
+  content: "\f68b";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  position: absolute;
+  left: 80%;
+  top: 52%;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+.ssc::after {
+  content: "\f002";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  position: absolute;
+  left: 80%;
+  top: 52%;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+.eng::after {
+  content: "\f518";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  position: absolute;
+  left: 80%;
+  top: 52%;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+.hindi::after {
+  content: "\f679";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  position: absolute;
+  left: 80%;
+  top: 52%;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+.sanskrit::after {
+  content: "\f679";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  position: absolute;
+  left: 80%;
+  top: 52%;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+.subject-btn:hover {
+  background: #fff;
+  transition: all 0.5s;
+  border-radius: 10px;
+  box-shadow: 0px 6px 15px #00f 61;
+  padding: 1rem 3rem 1rem 1.5rem;
+  color: #12181b;
+}
+.subject-btn:hover::after {
+  opacity: 1;
+  transition: all 0.5s;
+  color: #12181b;
+}

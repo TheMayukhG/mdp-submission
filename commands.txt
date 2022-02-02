@@ -1,0 +1,14 @@
+git config --global user.name Mayukh28
+git config --global user.email ov3rload28@gmail.com
+touch .gitignore
+git init
+git add .
+git commit -m "Commit Message"
+git remote add origin (SSH link of repo)
+
+ssh-keygen -t rsa -b 4096 -C "The email"
+cat /c/Users/Mayukh/.ssh/id_rsa.pub
+
+copy the key and paste it in 
+
+Github acc settings > SSH Keys > 
