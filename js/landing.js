@@ -78,11 +78,11 @@ function animateTerrain(event) {
 }
 
 
-window.addEventListener("resize", e => {
+// window.addEventListener("resize", e => {
   
-})
+// })
 
-const scaleArr = [21]
+
 // Render Loop
 function animate() {
   mesh.rotation.z += 0.01 * Math.sin(1)

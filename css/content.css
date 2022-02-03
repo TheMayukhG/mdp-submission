@@ -1,0 +1,12 @@
+.projects{
+    /* background: #fff; */
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0%, -50%);
+    height: 100px;
+    display: block;
+    width: 100px;
+    z-index: 50;
+}
