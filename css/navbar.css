@@ -7,7 +7,7 @@
 
 body{
     background: #12181b;
-    height: 2000px;
+    height: 20000px;
     overflow-x: hidden;
 }
 .head-not-scrolled{
@@ -57,6 +57,9 @@ nav{
     display: flex;
     justify-content: space-between;
 }
+.link:hover{
+    color: #33ffff;
+}
 .nav-logo{
     height: 60px;
     width: 60px;
@@ -72,7 +75,7 @@ nav{
     cursor: pointer;
 }
 .button:hover{
-    background: #fff;
+    background: #33ffff;
     color: #12181b;
     border-color: #12181b;
 }

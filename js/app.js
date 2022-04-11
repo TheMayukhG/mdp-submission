@@ -17,7 +17,9 @@ window.addEventListener("scroll", (e) => {
     // waves.style.display = "hidden"
     const waves = document.getElementById('vanta-rings');
     
-    waves.style.opacity = "80%";
+    // waves.style.opacity = "80%";
+    // waves.style.position = "fixed";
+    // waves.style.top =0
     // waves.style.height = `${100}vh`;
     // waves.style.width = `${100}vw`;
     // console.log(waves);
@@ -33,12 +35,52 @@ window.addEventListener("scroll", (e) => {
       `
       const waves = document.getElementById('vanta-rings');
     
+      // waves.style.opacity = 0;
+      // waves.style.position = 'relative';
+      
+      
+      
+      
+  }
+});
+// document.getElementById('vanta-rings').style.top = "120vh"
+window.addEventListener("scroll", () => {
+  console.log(window.scrollY);
+  if (window.scrollY > 400) {
+
+    // waves.style.display = "hidden"
+    const waves = document.getElementById('vanta-rings');
+    
+    waves.style.opacity = "80%";
+    waves.style.display = "block";
+    // waves.style.top = 0;
+    console.log(waves);
+    
+  } else if (window.scrollY < 399) {
+
+    
+      const waves = document.getElementById('vanta-rings');
+    
       waves.style.opacity = 0;
+      setTimeout(() => {
+        
+        waves.style.display = "none";
+      }, 500);
+      
+      
+      
+      
       
   }
 });
 
-
+// window.addEventListener("scroll",()=>{
+//   if (window.scrollY>= 794){
+//     const waves = document.getElementById('vanta-rings');
+//     waves.style.position = fixed;
+//     waves.style.top = 0;
+//   }
+// })
 
 
 // hamburger menu

@@ -5,16 +5,17 @@ canvas {
   z-index: 0;
 }
 
-.animated-backgrounds {
-  top: 120vh;
-  position: relative;
-  opacity: 100%;
+#vanta-rings {
+  position: sticky;
+  top: 0vh;
+  opacity: 0%;
   height: 100vh;
   width: 100vw;
   z-index: 0;
+  /* display: none; */
   /* background: #fff; */
   /* box-shadow: 8px 65px 55px 24px #ffffff inset; */
   /* box-shadow: 50px 50px 113px #000 inset,-50px -50px 110px #000 inset; */
-  transition: 4s;
+  transition: 0.3s;
   /* transform: rotateZ(270deg); */
 }
