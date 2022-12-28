@@ -1,7 +1,7 @@
 // This is the js file for functionality of whole website
-document.addEventListener("load", ()=>{
+
   window.scroll(0,1px);
-})
+
 console.log("included");
 
 // consts
